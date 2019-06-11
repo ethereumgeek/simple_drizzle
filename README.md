@@ -67,7 +67,6 @@ We'll ignore that too. Now go back to the top level directory where the simple_d
 ```
 cd ../simple_drizzle
 npm link drizzle
-npm install
 cd app
 npm run start
 ```
