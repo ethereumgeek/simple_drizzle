@@ -40,7 +40,7 @@ npm ci
 npm run test
 npm run build
 ```
-After 'npm run build' I get a warning:
+After 'npm run build' we get a warning:
 
 ```
 WARNING in ./src/web3/web3Saga.js 86:18-35
@@ -55,7 +55,14 @@ Can we ignore this? Unclear but we'll assume we can. Finally:
 npm link
 ```
 
-Now go back to the top level directory where the simple_drizzle app is cloned and link the 'fixed' drizzle:
+We also get a warning after 'npm link':
+
+```
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules/ganache-core/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+```
+
+We'll ignore that too. Now go back to the top level directory where the simple_drizzle app is cloned and link the 'fixed' drizzle:
 
 ```
 cd ../simple_drizzle
