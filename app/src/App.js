@@ -9,7 +9,8 @@ import MyContainer from "./MyContainer";
 
 class App extends Component {
   render() {
-/*    let debugInfo = "";
+/*  // This is our debug info for our real app. Needs modification to work here.  
+    let debugInfo = "";
 
     let drizzle = this.context.drizzle;
     let state = drizzle.store.getState();
