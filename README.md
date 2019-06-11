@@ -27,9 +27,9 @@ Then deploy the dapp to some URL.
 
 See some options for how to deploy [here](https://facebook.github.io/create-react-app/docs/deployment). If you go to the URL you deployed to with a Metamask-enabled browser or Cipherwallet or Alphawallet on iOS (again, using Rinkeby) you'll see everything working fine. If you visit this URL with Coinbase Wallet on iOS, the app won't load because drizzle can't initialize.
 
-According to the Truffle team (who created Drizzle), this is because "Coinbase [hasn't implemented] EIP 1102 and automatically connects the dapp upon invocation of window.ethereum.enable()"
+According to the Drizzle team, this is because "Coinbase [hasn't implemented] EIP 1102 and automatically connects the dapp upon invocation of window.ethereum.enable()"
 
-The truffle team has a branch with a potential fix, but this doesn't seem to work for us and we're not sure why. To use the fix:
+The Drizzle team has a branch with a potential fix, but this doesn't seem to work for us and we're not sure why. To use the fix:
 
 ```
 git clone git@github.com:trufflesuite/drizzle.git
@@ -103,4 +103,8 @@ npm run build
 ```
 Now the app works in Coinbase Wallet. 
 
-Why does this app work with the fixed drizzle repo, but the first one didn't? This is the mystery we're trying to solve. If you have ideas please let me know. Either open up an issue in this repo or email elliotolds at gmail.
+Why does this app work with the fixed drizzle repo, but the first one doesn't? This is the mystery we're trying to solve. 
+
+The way the first app uses Drizzle is based on the code in https://github.com/truffle-box/drizzle-box. The working app uses DrizzleContext, whereas the non-working one uses DrizzleProvider.
+
+If you have ideas about why the first app fails to load Drizzle please let me know. Either open up an issue in this repo or email elliotolds at gmail.
