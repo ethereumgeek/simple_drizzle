@@ -9,12 +9,31 @@ import MyContainer from "./MyContainer";
 
 class App extends Component {
   render() {
+/*    let debugInfo = "";
+
+    let drizzle = this.context.drizzle;
+    let state = drizzle.store.getState();
+    debugInfo = JSON.stringify({
+      drizzleStatus: state.drizzleStatus,
+      web3Status: state.web3.status,
+      windowEthereum: window.ethereum.selectedAddress,
+      windowWeb3: window.web3.currentProvider.selectedAddress,
+      web3All: state.web3
+    });
+    */
+    //console.log("before log");
+    //console.log(LoadingContainer);
+    //console.log("after log");
+
     return (
-      <DrizzleProvider options={drizzleOptions}>
-        <LoadingContainer>
-          <MyContainer />
-        </LoadingContainer>
-      </DrizzleProvider>
+      <div>
+        <div>Put debug output here</div>
+        <DrizzleProvider options={drizzleOptions}>
+          <LoadingContainer>
+            <MyContainer />
+          </LoadingContainer>
+        </DrizzleProvider>
+      </div>
     );
   }
 }
