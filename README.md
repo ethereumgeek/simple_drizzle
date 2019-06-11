@@ -22,7 +22,7 @@ npm run build
 Then deploy the dapp to some URL. 
 
 ```
-<do whatever you do to deploy apps here, for instance "firebase deploy">
+<do whatever you do to deploy apps here, for instance "firebase deploy" if you use firebase>
 ```
 
 If you go to this URL with a Metamask-enabled browser or Cipherwallet or Alphawallet on iOS (again, using Rinkeby) you'll see everything working fine. If you visit this URL with Coinbase Wallet on iOS, the app won't load because drizzle can't initialize.
@@ -75,7 +75,7 @@ The app should still work on your local machine after this. It it supposed to no
 
 ```
 npm run build
-<do whatever you do to deploy apps here, for instance "firebase deploy">
+<do whatever you do to deploy apps here, for instance "firebase deploy" if you use firebase>
 ```
 
 If you go to the deployed app on Coinbase Wallet (remember to use Rinkeby), you should still see that the app fails to load. If you use Cipher Wallet it still works fine.
