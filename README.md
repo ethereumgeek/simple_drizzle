@@ -19,7 +19,7 @@ Make sure you're on the Rinkeby network. You'll see that drizzle loads and you c
 npm run build
 ```
 
-Then deploy the dapp to some URL. If you go to this URL with a Metamask-enabled browser or Cipherwallet or Alphawallet on iOS (again, using Rinkeby) you'll see everything working fine. If you visit this URL with Coinbase Wallet, the app won't load because drizzle can't initialize.
+Then deploy the dapp to some URL. If you go to this URL with a Metamask-enabled browser or Cipherwallet or Alphawallet on iOS (again, using Rinkeby) you'll see everything working fine. If you visit this URL with Coinbase Wallet on iOS, the app won't load because drizzle can't initialize.
 
 According to the Truffle team (who created Drizzle), this is because "Coinbase [hasn't implemented] EIP 1102 and automatically connects the dapp upon invocation of window.ethereum.enable()"
 
