@@ -22,10 +22,10 @@ npm run build
 Then deploy the dapp to some URL. 
 
 ```
-<do whatever you do to deploy apps here, for instance "firebase deploy" if you use firebase>
+<somehow deploy your app>
 ```
 
-If you go to this URL with a Metamask-enabled browser or Cipherwallet or Alphawallet on iOS (again, using Rinkeby) you'll see everything working fine. If you visit this URL with Coinbase Wallet on iOS, the app won't load because drizzle can't initialize.
+See some options for how to deploy [here](https://facebook.github.io/create-react-app/docs/deployment). If you go to this URL with a Metamask-enabled browser or Cipherwallet or Alphawallet on iOS (again, using Rinkeby) you'll see everything working fine. If you visit this URL with Coinbase Wallet on iOS, the app won't load because drizzle can't initialize.
 
 According to the Truffle team (who created Drizzle), this is because "Coinbase [hasn't implemented] EIP 1102 and automatically connects the dapp upon invocation of window.ethereum.enable()"
 
@@ -75,7 +75,7 @@ The app should still work on your local machine after this. It's supposed to now
 
 ```
 npm run build
-<do whatever you do to deploy apps here, for instance "firebase deploy" if you use firebase>
+<somehow deploy your app>
 ```
 
 If you go to the deployed app on Coinbase Wallet (remember to use Rinkeby), you should still see that the app fails to load. If you use Cipher Wallet it still works fine.
