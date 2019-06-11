@@ -22,7 +22,7 @@ npm run build
 Then deploy the dapp to some URL. 
 
 ```
-<somehow deploy your app>
+<somehow deploy the app>
 ```
 
 See some options for how to deploy [here](https://facebook.github.io/create-react-app/docs/deployment). If you go to the URL you deployed to with a Metamask-enabled browser or Cipherwallet or Alphawallet on iOS (again, using Rinkeby) you'll see everything working fine. If you visit this URL with Coinbase Wallet on iOS, the app won't load because drizzle can't initialize.
@@ -75,10 +75,32 @@ The app should still work on your local machine after this. It's supposed to now
 
 ```
 npm run build
-<somehow deploy your app>
+<somehow deploy the app>
 ```
 
 If you go to the deployed app on Coinbase Wallet (remember to use Rinkeby), you should still see that the app fails to load. If you use Cipher Wallet it still works fine.
 
-We're not sure why truffle's "fixed" version of drizzle doesn't allow the app to load in Coinbase Wallet. If you have ideas please let me know. Either open up an issue in this repo or email elliotolds at gmail.
+###A working example
 
+A developer on the Truffle team has an example of a drizzle project which does initialize from within Coinbase Wallet. To try it, do this:
+
+```
+git clone git@github.com:cds-amal/drizzle_react_example.git
+cd drizzle_react_example
+npm install
+npm run start
+<see that it works locally>
+npm run build
+<somehow deploy the app>
+```
+
+You'll see that it works in wallets like Cipher Wallet, but not in Coinbase Wallet. Then link to the fixed drizzle repo:
+
+```
+npm link drizzle
+npm run build
+<somehow deploy the app>
+```
+Now the app works in Coinbase Wallet. 
+
+Why does this app work with the fixed drizzle repo, but the first one didn't? This is the mystery we're trying to solve. If you have ideas please let me know. Either open up an issue in this repo or email elliotolds at gmail.
