@@ -71,7 +71,7 @@ cd app
 npm run start
 ```
 
-The app should still work on your local machine after this. It it supposed to now work with Coinbase Wallet, let's see:
+The app should still work on your local machine after this. It's supposed to now work with Coinbase Wallet, let's see:
 
 ```
 npm run build
@@ -80,5 +80,5 @@ npm run build
 
 If you go to the deployed app on Coinbase Wallet (remember to use Rinkeby), you should still see that the app fails to load. If you use Cipher Wallet it still works fine.
 
-We're not sure why truffle's "fixed" version of drizzle doesn't allow the app to load in Coinbase Wallet. If you have ideas please let me know. elliotolds at gmail.
+We're not sure why truffle's "fixed" version of drizzle doesn't allow the app to load in Coinbase Wallet. If you have ideas please let me know. Either open up an issue in this repo or email elliotolds at gmail.
 
