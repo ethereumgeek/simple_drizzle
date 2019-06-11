@@ -39,6 +39,17 @@ npm install
 npm ci
 npm run test
 npm run build
+```
+After 'npm run build' I get a warning:
+
+WARNING in ./src/web3/web3Saga.js 86:18-35
+"export 'WEB3_ERROR' (imported as 'Action') was not found in './constants'
+ @ ./src/drizzleStatus/drizzleStatusSaga.js
+ @ ./src/index.js
+
+Can we ignore this? Unclear but we'll assume we can. Finally:
+
+```
 npm link
 ```
 
