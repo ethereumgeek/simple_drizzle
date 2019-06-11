@@ -80,7 +80,7 @@ npm run build
 
 If you go to the deployed app on Coinbase Wallet (remember to use Rinkeby), you should still see that the app fails to load. If you use Cipher Wallet it still works fine.
 
-###A working example
+### A working example
 
 A developer on the Truffle team has an example of a drizzle project which does initialize from within Coinbase Wallet. To try it, do this:
 
